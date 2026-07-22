@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --color-brand-dark-base: #2A0A10;
+  --color-brand-dark-deep: #1A0509;
+  --color-brand-dark-alt: #3B0D14;
+  --color-brand-secondary-dark: #5C0F1A;
+  --color-brand-secondary-dark-alt: #6E1220;
+  --color-brand-red: #C8102E;
+  --color-brand-red-bright: #E8394F;
+  --color-brand-offwhite: #F5F1EC;
+  --color-brand-muted: #C9B8B8;
+  --color-brand-light: #F8F6F4;
+  --color-brand-black: #111111;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1A0509;
+}
+::-webkit-scrollbar-thumb {
+  background: #5C0F1A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8102E;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-brand-dark-deep);
+  color: var(--color-brand-offwhite);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
