@@ -126,7 +126,7 @@ group-hover:opacity-95
             </button>
             <span className="text-[#C8102E]/40">|</span>
             <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/6285640066619"
               target="_blank"
               rel="noreferrer"
               className="hover:text-brand-red transition-colors flex items-center gap-1"

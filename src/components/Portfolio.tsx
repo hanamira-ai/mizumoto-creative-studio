@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { PORTFOLIOS } from '../data';
-import { Sparkles, Calendar, Tag, ArrowUpRight } from 'lucide-react';
+import { Sparkles, Calendar, Tag } from 'lucide-react';
 
 export default function Portfolio() {
   const [filter, setFilter] = useState<string>('Semua');
@@ -85,19 +85,21 @@ export default function Portfolio() {
                   
                   {/* Floating badging */}
                   <div className="absolute top-4 left-4 flex gap-2">
-                    <span className="text-[10px] font-mono tracking-widest uppercase bg-[#C8102E] text-white px-2.5 py-1 rounded-md font-semibold">
-                      {project.clientType}
-                    </span>
-                    <span className="text-[10px] font-mono tracking-widest uppercase bg-black/80 text-white px-2.5 py-1 rounded-md font-semibold backdrop-blur-sm flex items-center gap-1">
-                      <Calendar className="w-3 h-3 text-[#E8394F]" />
-                      {project.year}
-                    </span>
-                  </div>
-
-                  {/* Hover visual arrow button */}
-                  <div className="absolute bottom-4 right-4 p-2 bg-[#C8102E] text-white rounded-full translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                    <ArrowUpRight className="w-4 h-4" />
-                  </div>
+  <span className="text-[10px] font-mono tracking-widest uppercase bg-[#C8102E] text-white px-2.5 py-1 rounded-md font-semibold">
+    {project.clientType}
+  </span>
+  {project.itemType === 'template' ? (
+    <span className="text-[10px] font-mono tracking-widest uppercase bg-amber-500 text-white px-2.5 py-1 rounded-md font-semibold backdrop-blur-sm flex items-center gap-1">
+      <Sparkles className="w-3 h-3" />
+      TEMPLATE
+    </span>
+  ) : (
+    <span className="text-[10px] font-mono tracking-widest uppercase bg-black/80 text-white px-2.5 py-1 rounded-md font-semibold backdrop-blur-sm flex items-center gap-1">
+      <Calendar className="w-3 h-3 text-[#E8394F]" />
+      {project.year}
+    </span>
+  )}
+</div>
                 </div>
 
                 {/* Text Content */}

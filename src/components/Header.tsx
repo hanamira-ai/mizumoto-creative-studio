@@ -29,7 +29,6 @@ export default function Header({ view, setView }: HeaderProps) {
     { name: 'Layanan', action: () => { setView('home'); setTimeout(() => document.getElementById('layanan')?.scrollIntoView({ behavior: 'smooth' }), 100); } },
     { name: 'Portfolio', action: () => { setView('home'); setTimeout(() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }), 100); } },
     { name: 'Harga', action: () => { setView('home'); setTimeout(() => document.getElementById('harga')?.scrollIntoView({ behavior: 'smooth' }), 100); } },
-    { name: 'Karir', action: () => { setView('career'); window.scrollTo({ top: 0, behavior: 'smooth' }); } },
     { name: 'Kontak', action: () => { setView('home'); setTimeout(() => document.getElementById('kontak')?.scrollIntoView({ behavior: 'smooth' }), 100); } },
   ];
 

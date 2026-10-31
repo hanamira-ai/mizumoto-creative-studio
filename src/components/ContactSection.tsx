@@ -22,43 +22,24 @@ export default function ContactSection() {
   };
 
   const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    setErrorMsg('');
+  e.preventDefault();
+  setErrorMsg('');
+  if (!formData.name.trim()) { setErrorMsg('Nama lengkap wajib diisi.'); return; }
+  if (!formData.email.trim() || !formData.email.includes('@')) { setErrorMsg('Email tidak valid.'); return; }
+  if (!formData.phone.trim()) { setErrorMsg('Nomor WhatsApp wajib diisi.'); return; }
+  if (!formData.projectDesc.trim()) { setErrorMsg('Silakan deskripsikan kebutuhan proyek Anda.'); return; }
 
-    // Form validation
-    if (!formData.name.trim()) {
-      setErrorMsg('Nama lengkap wajib diisi.');
-      return;
-    }
-    if (!formData.email.trim() || !formData.email.includes('@')) {
-      setErrorMsg('Email tidak valid.');
-      return;
-    }
-    if (!formData.phone.trim()) {
-      setErrorMsg('Nomor WhatsApp wajib diisi.');
-      return;
-    }
-    if (!formData.projectDesc.trim()) {
-      setErrorMsg('Silakan deskripsikan kebutuhan proyek Anda.');
-      return;
-    }
+  setIsSubmitting(true);
 
-    setIsSubmitting(true);
+  const rawMessage = `Halo Mizumoto, saya ingin konsultasi proyek:\n\nNama: ${formData.name}\nEmail: ${formData.email}\nNo. WhatsApp: ${formData.phone}\nSektor: ${formData.organizationType}\n\nRencana Proyek:\n${formData.projectDesc}`;
+  window.open(`https://wa.me/6285640066619?text=${encodeURIComponent(rawMessage)}`, '_blank');
 
-    // Simulate submission to server/database
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        organizationType: 'UMKM',
-        projectDesc: '',
-      });
-    }, 1200);
-  };
+  setTimeout(() => {
+    setIsSubmitting(false);
+    setIsSubmitted(true);
+    setFormData({ name: '', email: '', phone: '', organizationType: 'UMKM', projectDesc: '' });
+  }, 800);
+};
 
   return (
     <section id="kontak" className="py-24 bg-white text-[#1A0307] relative">
@@ -87,7 +68,7 @@ export default function ContactSection() {
             {/* Direct Contacts List */}
             <div className="space-y-5">
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/6285640066619"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-start gap-4 p-4 rounded-xl border border-gray-200 bg-[#F8F6F4]/50 backdrop-blur-md hover:bg-white hover:border-[#C8102E]/30 hover:shadow-md transition-all duration-300 group"
@@ -97,7 +78,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-sm text-[#1A0307]">WhatsApp Fast Response</h4>
-                  <p className="text-xs text-gray-600 mt-0.5">0812-3456-7890 (Senin - Sabtu, 08:00 - 17:00 WIB)</p>
+                  <p className="text-xs text-gray-600 mt-0.5">0856-4006-6619 (Senin - Sabtu, 08:00 - 17:00 WIB)</p>
                 </div>
               </a>
 
@@ -114,17 +95,22 @@ export default function ContactSection() {
                 </div>
               </a>
 
-              <div className="flex items-start gap-4 p-4 rounded-xl border border-gray-200 bg-[#F8F6F4]/50 backdrop-blur-md">
-                <div className="p-3 bg-[#C8102E]/10 text-[#C8102E] rounded-lg shrink-0">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-sm text-[#1A0307]">Alamat Kantor Pusat</h4>
-                  <p className="text-xs text-gray-600 mt-0.5 leading-relaxed">
-                    Jl. Sultan Agung No. 142, Jetayu, Kec. Pekalongan Utara, Kota Pekalongan, Jawa Tengah 51111
-                  </p>
-                </div>
-              </div>
+              <a
+  href="https://www.google.com/maps/search/?api=1&query=MIZUMOTO+Creative+Studio"
+  target="_blank"
+  rel="noreferrer"
+  className="flex items-start gap-4 p-4 rounded-xl border border-gray-200 bg-[#F8F6F4]/50 backdrop-blur-md hover:bg-white hover:border-[#C8102E]/30 hover:shadow-md transition-all duration-300 group"
+>
+  <div className="p-3 bg-[#C8102E]/10 text-[#C8102E] rounded-lg shrink-0 group-hover:scale-105 transition-transform">
+    <MapPin className="w-5 h-5" />
+  </div>
+  <div>
+    <h4 className="font-bold text-sm text-[#1A0307]">Alamat Kantor Pusat</h4>
+    <p className="text-xs text-gray-600 mt-0.5 leading-relaxed">
+      Pekuncen Utara Gg. Majegan 2 RT. 02 RW. IV No. 428, Wiradesa, Pekalongan, Jawa Tengah
+    </p>
+  </div>
+</a>
             </div>
 
             {/* Geographical Service Coverage tag-cloud */}
@@ -313,12 +299,12 @@ export default function ContactSection() {
         {/* Full-Width Google Maps Embed */}
         <div className="mt-16 rounded-xl overflow-hidden h-80 border border-gray-200 bg-gray-50 shadow-md relative">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.916843468571!2d109.67439167448834!3d-6.888565193110461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e702424fa7bcbc5%3A0x6431952ee5cb70d6!2sMuseum%20Batik%20Pekalongan!5e0!3m2!1sid!2sid!4v1711200000000!5m2!1sid!2sid" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.001848763686!2d109.62413897590626!3d-6.890380567428098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7026f84a6fdc6b%3A0x1914550d0b043b35!2sMIZUMOTO%20Creative%20Studio!5e0!3m2!1sen!2sid!4v1793457335137!5m2!1sen!2sid"
             className="w-full h-full border-0"
             allowFullScreen={true} 
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
-            title="Peta Kantor Mizumoto Jetayu Pekalongan"
+            title="Peta Kantor Mizumoto Wiradesa Pekalongan"
           ></iframe>
         </div>
 

@@ -133,7 +133,7 @@ to-[#2A0A10] text-[#F5F1EC] selection:bg-[#C8102E] selection:text-white"
             >
               <a
                 id="hero-whatsapp-cta"
-                href="https://wa.me/6281234567890?text=Halo%20Mizumoto%20Creative%20Studio%2C%20saya%20tertarik%20untuk%20konsultasi%20jasa%20pembuatan%20website"
+                href="https://wa.me/6285640066619?text=Halo%20Mizumoto%20Creative%20Studio%2C%20saya%20tertarik%20untuk%20konsultasi%20jasa%20pembuatan%20website"
                 target="_blank"
                 rel="noreferrer"
                 className="w-full sm:w-auto px-7 py-3.5 bg-brand-red hover:bg-brand-red-bright text-brand-offwhite font-bold rounded-lg shadow-lg shadow-brand-red/20 border border-brand-red-bright/30 flex items-center justify-center gap-2 group transition-all duration-300 transform hover:-translate-y-0.5 text-xs uppercase tracking-widest cursor-pointer"

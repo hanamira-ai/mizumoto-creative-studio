@@ -147,7 +147,7 @@ export default function InteractiveEstimator() {
 
     const text = `Halo Mizumoto Creative Studio, saya tertarik untuk mendiskusikan pembuatan website:%0A%0A*Kategori Proyek:* ${currentProject.name}%0A*Add-On Terpilih:*%0A${selectedAddOnNames || '- Tidak ada'}%0A%0A*Estimasi Investasi:* ${formatIDR(calculatedPrice)}%0A*Estimasi Waktu:* ${calculatedDays} Hari Kerja%0A%0AMohon jadwal diskusi konsultasi gratis lebih lanjut. Terima kasih.`;
     
-    window.open(`https://wa.me/6281234567890?text=${text}`, '_blank');
+    window.open(`https://wa.me/6285640066619?text=${text}`, '_blank');
   };
 
   return (

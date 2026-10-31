@@ -94,7 +94,7 @@ export default function App() {
       {/* Floating WhatsApp Action Button */}
       <a
         id="floating-whatsapp-widget"
-        href="https://wa.me/6281234567890?text=Halo%20Mizumoto%20Creative%20Studio%2C%20saya%20tertarik%20untuk%20konsultasi%20jasa%20pembuatan%20website"
+        href="https://wa.me/6285640066619?text=Halo%20Mizumoto%20Creative%20Studio%2C%20saya%20tertarik%20untuk%20konsultasi%20jasa%20pembuatan%20website"
         target="_blank"
         rel="noreferrer"
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center text-white shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-green-500/20 active:scale-95 group"

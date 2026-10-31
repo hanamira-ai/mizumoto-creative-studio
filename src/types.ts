@@ -13,6 +13,7 @@ export interface PortfolioItem {
   category: string;
   description: string;
   clientType: 'Sekolah' | 'UMKM' | 'Startup' | 'Pemerintah' | 'Corporate';
+  itemType?: 'project' | 'template';
   image: string;
   year: string;
   tags: string[];

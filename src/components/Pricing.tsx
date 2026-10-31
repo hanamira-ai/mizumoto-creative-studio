@@ -80,7 +80,7 @@ export default function Pricing() {
       }
     } else {
       const text = `Halo Mizumoto Creative Studio, saya ingin menanyakan lebih lanjut mengenai paket website "${tierName}" yang tercantum di pricing table.`;
-      window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(text)}`, '_blank');
+      window.open(`https://wa.me/6285640066619?text=${encodeURIComponent(text)}`, '_blank');
     }
   };
 
@@ -101,7 +101,7 @@ export default function Pricing() {
     const text = `Yth. Tim Proposal Mizumoto Creative Studio\n\nSaya ingin mengajukan REQUEST PENAWARAN (QUOTATION) resmi dengan rincian berikut:\n\n- Nama Instansi: ${formData.instansi}\n- Penanggung Jawab: ${formData.pj}\n- No. WhatsApp: ${formData.wa}\n- Sektor Kebutuhan: ${formData.kebutuhan}\n\nMohon siapkan dokumen penawaran teknis & komersial formal untuk dikirimkan kepada kami. Terima kasih.`;
     
     setTimeout(() => {
-      window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(text)}`, '_blank');
+      window.open(`https://wa.me/6285640066619?text=${encodeURIComponent(text)}`, '_blank');
     }, 1200);
   };
 

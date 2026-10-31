@@ -156,7 +156,7 @@ export default function OtherPages({ view, setView }: OtherPagesProps) {
                     <p className="text-brand-muted text-xs sm:text-sm leading-relaxed mb-6">{p.desc}</p>
                   </div>
                   <button 
-                    onClick={() => window.open('https://wa.me/6281234567890?text=Halo%20Mizumoto%2C%20saya%20tertarik%20mencoba%20demo%20produk%20' + encodeURIComponent(p.name), '_blank')}
+                    onClick={() => window.open('https://wa.me/6285640066619?text=Halo%20Mizumoto%2C%20saya%20tertarik%20mencoba%20demo%20produk%20' + encodeURIComponent(p.name), '_blank')}
                     className="w-full py-3 bg-[#5C0F1A]/30 hover:bg-[#C8102E]/30 text-white font-bold rounded-lg transition-all text-xs uppercase tracking-wider border border-[#C8102E]/20"
                   >
                     {p.ctaText}
@@ -428,13 +428,13 @@ export default function OtherPages({ view, setView }: OtherPagesProps) {
               <div className="space-y-6">
                 <div className="bg-white/5 border border-white/10 p-6 rounded-xl backdrop-blur-md">
                   <h4 className="font-bold text-sm text-[#E8394F] uppercase tracking-wider">WhatsApp Fast Response</h4>
-                  <p className="text-brand-offwhite font-display text-lg font-bold mt-1">0812-3456-7890</p>
+                  <p className="text-brand-offwhite font-display text-lg font-bold mt-1">0856-4006-6619</p>
                   <p className="text-xs text-brand-muted mt-2">Jam layanan Fast-Response: Senin s.d. Sabtu pukul 08:00 - 17:00 WIB.</p>
                 </div>
                 <div className="bg-white/5 border border-white/10 p-6 rounded-xl backdrop-blur-md">
                   <h4 className="font-bold text-sm text-[#E8394F] uppercase tracking-wider">Kantor Koordinasi Pusat</h4>
                   <p className="text-xs text-brand-muted mt-2 leading-relaxed">
-                    Jl. Sultan Agung No. 142, Jetayu, Kec. Pekalongan Utara, Kota Pekalongan, Jawa Tengah 51111 (Dekat Kawasan Budaya Jetayu)
+                    Pekuncen Utara Gg. Majegan 2 RT. 02 RW. IV No. 428, Wiradesa, Pekalongan, Jawa Tengah (Dekat Kawasan Budaya Jetayu)
                   </p>
                 </div>
               </div>
@@ -447,7 +447,7 @@ export default function OtherPages({ view, setView }: OtherPagesProps) {
                   allowFullScreen={true} 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Peta Kantor Mizumoto Jetayu Pekalongan"
+                  title="Peta Kantor Mizumoto Wiradesa Pekalongan"
                 ></iframe>
               </div>
             </div>
@@ -603,7 +603,7 @@ export default function OtherPages({ view, setView }: OtherPagesProps) {
                   <button 
                     onClick={() => {
                       const text = `Halo Mizumoto, saya telah mengirimkan jadwal kunjungan offline via web booking untuk tanggal ${bookingDate} pukul ${bookingTime} WIB. Mohon dikoordinasikan.`;
-                      window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(text)}`, '_blank');
+                      window.open(`https://wa.me/6285640066619?text=${encodeURIComponent(text)}`, '_blank');
                     }}
                     className="px-6 py-3 bg-brand-red text-white text-xs font-bold uppercase tracking-wider rounded-lg"
                   >

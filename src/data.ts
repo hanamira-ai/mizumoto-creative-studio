@@ -46,53 +46,58 @@ export const SERVICES: ServiceItem[] = [
 export const PORTFOLIOS: PortfolioItem[] = [
   {
     id: 'port-1',
-    title: 'Sistem PPDB & Portal Akademik SMAN Pekalongan',
-    category: 'Website Pendidikan',
-    description: 'Portal pembelajaran interaktif serta modul pendaftaran murid baru terpadu yang memproses ribuan pendaftar per tahun dengan aman.',
-    clientType: 'Sekolah',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800&auto=format&fit=crop', // Stock premium: school setting
+    title: 'IBIP — Bintan Industrial Park Platform',
+    category: 'Corporate Profile Premium',
+    description: 'Website korporat untuk kawasan ekonomi khusus terintegrasi di Pulau Bintan, menampilkan profil investasi energi terbarukan dan infrastruktur digital.',
+    clientType: 'Corporate',
+    itemType: 'project',
+    image: '/assets/portfolio/ibip-mockup.png',
     year: '2025',
-    tags: ['React', 'Sistem PPDB', 'Tailwind CSS', 'Keamanan Ketat']
+    tags: ['React', 'Corporate Profile', 'Multi-language', 'Editorial Design']
   },
   {
     id: 'port-2',
-    title: 'Batik Pekalongan Hub & Marketplace',
-    category: 'E-Commerce Platform',
-    description: 'E-commerce berskala nasional yang menampung ratusan pengrajin batik lokal dengan manajemen multi-vendor dan payment gateway otomatis.',
+    title: 'Aura Photo Studio',
+    category: 'Website Jasa & Booking',
+    description: 'Website studio foto profesional dengan sistem booking online, galeri portofolio interaktif, dan integrasi WhatsApp untuk reservasi cepat.',
     clientType: 'UMKM',
-    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=800&auto=format&fit=crop', // Stock premium: boutique shop
-    year: '2024',
-    tags: ['E-Commerce', 'Payment Gateway', 'Vite', 'SEO Lokal']
+    itemType: 'project',
+    image: '/assets/portfolio/aura-photo-mockup.png',
+    year: '2025',
+    tags: ['Booking System', 'Gallery', 'Tailwind CSS', 'WhatsApp Integration']
   },
   {
     id: 'port-3',
-    title: 'SIPP Batang - Dashboard Pemantauan Publik',
-    category: 'Portal Pemerintah',
-    description: 'Sistem Informasi Pelayanan Publik terintegrasi untuk Kabupaten Batang, memudahkan visualisasi kinerja layanan kepada warga.',
-    clientType: 'Pemerintah',
-    image: 'https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?q=80&w=800&auto=format&fit=crop', // Stock premium: professional dashboard/gov feel
+    title: 'UNO Batik — Cultural Heritage E-Commerce',
+    category: 'E-Commerce Platform',
+    description: 'Platform e-commerce koleksi batik modern dengan katalog produk elegan, custom size fitting, dan pengalaman belanja online yang premium.',
+    clientType: 'UMKM',
+    itemType: 'project',
+    image: '/assets/portfolio/uno-batik-mockup.png',
     year: '2025',
-    tags: ['D3.js', 'Portal Instansi', 'Aksesibilitas', 'Dashboard']
+    tags: ['E-Commerce', 'Product Catalog', 'Responsive Design', 'React']
   },
   {
     id: 'port-4',
-    title: 'Portal Logistik & Armada Megatech Slawi',
-    category: 'Sistem Aplikasi Custom',
-    description: 'Aplikasi internal pelacakan posisi kontainer logistik secara real-time dan optimasi rute pengiriman barang di area Jawa Tengah.',
-    clientType: 'Corporate',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop', // Stock premium: logistics warehouse
-    year: '2024',
-    tags: ['Realtime Maps', 'Tailwind CSS', 'SaaS', 'Express API']
+    title: 'Template Website Sekolah — Yayasan Muhammadiyah',
+    category: 'Template Portal Pendidikan',
+    description: 'Template siap pakai untuk sekolah berbasis Yayasan Muhammadiyah, lengkap dengan modul PPDB online dan portal akademik — siap dikustomisasi sesuai identitas sekolah Anda.',
+    clientType: 'Sekolah',
+    itemType: 'template',
+    image: '/assets/portfolio/template-sekolah-muhammadiyah.png',
+    year: '2026',
+    tags: ['Sistem PPDB', 'Template Siap Pakai', 'React', 'Portal Akademik']
   },
   {
     id: 'port-5',
-    title: 'EdTech Pemalang LMS Platform',
-    category: 'Startup Web App',
-    description: 'Learning Management System interaktif berlatensi rendah untuk kolaborasi intensif antara tutor profesional dan siswa sekolah dasar.',
-    clientType: 'Startup',
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop', // Stock premium: tablet computer e-learning
-    year: '2025',
-    tags: ['Interactive Canvas', 'WebSockets', 'React', 'Motion']
+    title: 'Template Website Sekolah — Yayasan NU',
+    category: 'Template Portal Pendidikan',
+    description: 'Template siap pakai untuk sekolah berbasis Yayasan Nahdlatul Ulama, lengkap dengan modul PPDB online dan portal akademik — siap dikustomisasi sesuai identitas sekolah Anda.',
+    clientType: 'Sekolah',
+    itemType: 'template',
+    image: '/assets/portfolio/template-sekolah-nu.png',
+    year: '2026',
+    tags: ['Sistem PPDB', 'Template Siap Pakai', 'React', 'Portal Akademik']
   }
 ];
 
